@@ -1,0 +1,61 @@
+/* /src/App.css */
+
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.kanban-board {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #f7f7f7;
+  height: 100vh;
+}
+
+.kanban-column {
+  background-color: #e3e3e3;
+  border-radius: 8px;
+  padding: 10px;
+  width: 30%;
+  max-height: 80vh;
+  overflow-y: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.kanban-column h3 {
+  background-color: #3b82f6;
+  color: white;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+.task-card {
+  background-color: white;
+  border-radius: 8px;
+  padding: 10px;
+  margin: 10px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.task-card h4 {
+  font-size: 16px;
+  margin: 0;
+}
+
+.task-card p {
+  margin: 4px 0;
+  font-size: 14px;
+  color: #555;
+}
+
+/* Adjust grouping and sorting selectors */
+.grouping-selector, .sort-selector {
+  margin-bottom: 20px;
+}
+
+.grouping-selector select, .sort-selector select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}

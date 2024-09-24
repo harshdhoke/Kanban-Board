@@ -1,0 +1,75 @@
+/* Kanban Board Layout */
+.kanban-board {
+    position: relative;
+    padding: 20px;
+  }
+  
+  /* Header with the display button */
+  .kanban-header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+  }
+  
+  .display-button {
+    background-color: #3b82f6;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .dropdown-menu {
+    position: absolute;
+    top: 60px; /* Adjust according to your layout */
+    left: 20px; /* Ensure it's aligned with the button */
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    border-radius: 8px;
+    z-index: 100;
+    width: 200px;
+  }
+  
+  .dropdown-menu h4 {
+    margin: 0 0 10px;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .dropdown-menu select {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+  
+  /* Flexbox container for Kanban columns */
+  .kanban-columns {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+    flex-wrap: nowrap;
+  }
+  
+  .kanban-column {
+    background-color: #e3e3e3;
+    border-radius: 8px;
+    padding: 10px;
+    flex: 1;
+    min-width: 250px;
+    max-width: 30%;
+    overflow-y: auto;
+  }
+  
+  .kanban-column h3 {
+    background-color: #3b82f6;
+    color: white;
+    padding: 8px;
+    text-align: center;
+    border-radius: 4px;
+  }
+  
